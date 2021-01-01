@@ -121,7 +121,7 @@ class AlienInvasion:
         # Get rid of bullets that have disappeared.
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
-                 self.bullets.remove(bullet)
+                self.bullets.remove(bullet)
 
         self._check_bullet_alien_collisions()
 
@@ -150,7 +150,7 @@ class AlienInvasion:
     def _update_aliens(self):
         """
         Check if the fleet is at an edge,
-          then update the positions of all aliens in the fleet.
+        then update the positions of all aliens in the fleet.
         """
         self._check_fleet_edges()
         self.aliens.update()
